@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: #bbc6fa;
+}
+
+.quote_box {
+    background-color: white;
+    height: 350px;
+    overflow: hidden;
+    width: 660px;
+    margin: 170px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.inside_box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textual_content .title {
+    font-size: 1.8rem;
+    font-weight: 550;
+    margin: 23px 0 18px 0;
+
+}
+
+.textual_content .title .bottom_color {
+    border-bottom: 2.3px solid rgb(23, 124, 229);
+}
+
+.textual_content .qoute {
+    margin: 40px 35px 35px 35px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.textual_content .author_name {
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+    margin: 0 10px 0 auto;
+    position: relative;
+}
+
+.textual_content .author_name::before {
+    content: '';
+    /* Required content property for pseudo-elements */
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Adjust for vertical centering */
+    height: 1px;
+    /* Height of the horizontal line */
+    width: 20px;
+    /* Width of the vertical line */
+    background-color: darkblue;
+    /* Color of the lines */
+}
+
+.author_name span {
+    font-size: 13px;
+}
+
+
+.inside_box .button_content {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inside_box .button_content .new_quote_button {
+    background: rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.inside_box .button_content .twitter_button {
+    background: white;
+    color: black;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside_box .button_content .twitter_button img {
+    width: 27px;
+    margin-right: 5px;
+}
